@@ -1,7 +1,7 @@
 # Create 2 public subnets
 resource "aws_subnet" "public_1" {
   vpc_id     = aws_vpc.vpc.id
-  cidr_block = var.private_1
+  cidr_block = var.public_1
   availability_zone = "ap-south-1a"
   map_public_ip_on_launch = true
 
